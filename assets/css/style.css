@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../images/img1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#email-error,
+#pwd-error {
+  position: absolute;
+  left: 25px;
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+}
+#answer,
+#details {
+  position: relative;
+  float: left;
+  color: green;
+  font-size: x-large;
+}
+#details {
+  position: relative;
+  float: left;
+  color: red;
+  font-size: x-large;
+}
+
+/* Adjust button styles */
+.btn-danger {
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+}
+
+/* Adjust positioning for modals */
+#my,
+#myModal {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+/* Adjust positioning for glassmorphism-centered */
+.glassmorphism-centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+}
+
+.glassmorphism-centered h1 {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cinepulse-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5em;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.catchy-caption {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjust modal content to apply glass morphism */
+.modal-content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Update modal header and body padding */
+.modal-header,
+.modal-body {
+  padding: 20px;
+}
+
+/* Styling for text within modals */
+.modal-header h2,
+.modal-body label,
+.modal-body input[type="email"],
+.modal-body input[type="password"],
+.modal-body input[type="checkbox"],
+.modal-footer input[type="submit"] {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Customize input fields */
+.modal-body input[type="email"],
+.modal-body input[type="password"],
+.modal-body input[type="checkbox"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Style submit buttons */
+.modal-footer input[type="submit"] {
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer input[type="submit"]:hover {
+  background-color: #e60000;
+}
+
+/* Styling for spans */
+#pwd-error,
+#details,
+#answer {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #ff4d4d; /* Red color for error messages */
+  margin-top: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#details {
+  color: #00cc66; /* Green color for success messages */
+}
+
+#answer {
+  color: #3399ff; /* Blue color for general messages */
+}
+
+
+/* Adjustments for mobile and tablet devices */
+@media (max-width: 768px) {
+    .image {
+      text-align: center;
+    }
+  
+    .glassmorphism-centered {
+      position: relative;
+      margin-top: 20px;
+      padding: 20px;
+    }
+  
+    .cinepulse-title {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+  
+    .catchy-caption {
+      font-size: 1.2em;
+    }
+  }
+  

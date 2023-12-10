@@ -1,0 +1,383 @@
+#welcomeMessage {
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+#movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.movie-card {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.movie-rating {
+  margin-bottom: 5px;
+}
+
+.movie-overview {
+  margin-bottom: 5px;
+}
+
+.movie-release {
+  font-style: italic;
+}
+
+/* netflix-style.css */
+.movie-card {
+  position: relative;
+  width: 200px;
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.movie-card .details {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.movie-card .details h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.movie-card .details p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+  line-height: 1.4;
+}
+
+#movieDetailsContainer {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#movieDetailsContainer h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#movieDetailsContainer p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+#movieDetailsContainer strong {
+  font-weight: bold;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px -6px rgba(0, 0, 0, 1);
+}
+
+
+
+.toggle {
+  width: 60px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ball {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fc0000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checkbox:checked + .label {
+  transform: translateX(30px);
+}
+
+.checkbox:checked + .label .ball {
+  background-color: #5cb85c; /* Change this to the color when toggled */
+}
+
+/* Hide the checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the heart */
+.heart {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Heart icon */
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background-color: red;
+  border-radius: 10px 10px 0 0;
+}
+
+.heart::before {
+  top: -20px;
+  left: 10px;
+  transform: rotate(-45deg);
+}
+
+.heart::after {
+  top: -20px;
+  right: 10px;
+  transform: rotate(45deg);
+}
+
+/* Styles for the logo and username */
+.logo {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust spacing between logo and text */
+}
+
+.username {
+  margin-left: 10px; /* Adjust spacing between text and username */
+  font-weight: bold;
+}
+
+#profilename {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #ff6363;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+#profilename:hover {
+  color: #ff8c8c;
+}
+
+#brandLink {
+  font-family: "Roboto", sans-serif; /* Use a trendy font */
+  font-size: 24px; /* Increase font size for visibility */
+  font-weight: bold; /* Make the text bold */
+  color: #4caf50; /* Set the text color */
+  text-decoration: none; /* Remove underlines */
+  transition: color 1s ease-in-out;
+  /* Smooth color transition */
+}
+
+#brandLink:hover {
+  color: red; /* Change color on hover */
+}
+
+/* Apply padding to form elements */
+.custom-form {
+  /* Adjust the overall padding */
+  padding: 10px;
+}
+
+.custom-select,
+.custom-input {
+  /* Add padding between filter selectors */
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.custom-button {
+  /* Add padding between search bar and button */
+  margin-left: 10px; /* Adjust as needed */
+}
+
+/* Style the profile link */
+#profilename,
+#usernamePlaceholder {
+  font-family: 'Pacifico', cursive;
+  text-decoration: none; /* Remove underlines */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  font-size: 20px;
+  color: #ff6363; /* Profile link color */
+  transition: color 1s ease-in-out;
+}
+
+#profilename:hover {
+  color: green; /* Change color on hover */
+  /* Add any hover effects */
+}
+
+/* Style the Font Awesome icon */
+.fa-user-circle {
+  margin-right: 5px; /* Adjust space between icon and text */
+  font-size: 24px; /* Adjust icon size */
+}
+
+#usernamePlaceholder:hover {
+  /* Initial box-shadow, essentially no shadow */
+  color: green;
+}
+
+.active {
+  /* Background color of the element */
+  transition: color 1s ease-in-out;
+  color: red;
+}
+
+.active_1 {
+  transition: color 1s ease-in-out;
+  color: rgb(8, 226, 8);
+}
+
+.trendy {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff6347;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.icon-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.icon:hover {
+  color: red;
+}
+
+.dark-mode {
+  /* Add styles for dark mode here */
+  background-color: #333; /* Example background color for dark mode */
+  color: #fff; /* Example text color for dark mode */
+}
+
+nav {
+  position: relative;
+}
+.moonBtn {
+  position: absolute;
+  top: 80px;
+}
+
+.dark-mode #movieDetailsContainer{
+  background-color: #333;
+  color: #fff; 
+}
+
+.dark-mode .right{
+  color: red;
+}
+
+.dark-mode .left{
+  color: #5cb85c;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .movie-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+  }
+  .toggle-text {
+    font-size: 14px;
+  }
+  .custom-select,
+  .custom-input {
+    margin-right: 5px;
+  }
+  .custom-button {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .movie-card {
+    width: 45%;
+    margin: 10px;
+  }
+}

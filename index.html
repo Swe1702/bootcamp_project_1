@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Cinepulse</title>
+</head>
+<body>
+    <div class="image">
+        <!-- <img src="assets/images/img1.jpg" alt="cinema background"> -->
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#my">SIGN UP</button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">LOGIN</button>
+
+        <div class="glassmorphism-centered">
+          <h1 class="cinepulse-title">Cinepulse</h1>
+          <p class="catchy-caption">Discover and Enjoy!!</p>
+      </div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>LOGIN</h2>
+      </div>
+      <div class="modal-body" id = "form">
+            <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" class="form-control" id="eml" placeholder="Enter email" name="email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          
+      </div>
+      
+      <div class="modal-footer">
+        <span id="pwd-error"></span>
+        <input type="submit" class="btn btn-info" value="Log in" id="onsubmit">
+      </div>
+    </div>
+</div>
+</div>
+<!--modal for sign up-->
+<div id="my" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2>SIGN UP</h2>
+          </div>
+          <div class="modal-body">
+                <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <span id="mail-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Username:</label>
+                <input type="email" class="form-control" id="username" placeholder="Enter username" name="username">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="pwd">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm" placeholder="confirm password" name="confirmpwd">
+                <span id ="match"></span>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <input type="submit" class="btn btn-info" value="Create account" id="bottom">
+            <span id="details"></span>
+            <span id="answer"></span>
+          </div>
+          </div>
+      </div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

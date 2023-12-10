@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CinePulse</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="brandLink"> CinePulse </a>
+
+        <a href="../index.html" id="profilename">
+          <i class="fas fa-user-circle"></i>
+        </a>
+        <span id="usernamePlaceholder"></span>
+
+        <span class="moonBtn">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24" id="svg">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M18.25 15.7499C17.2352 16.2904 16.23 16.25 15 16.25C10.9959 16.25 7.75 13.0041 7.75 9.00001C7.75 7.77001 7.70951 6.76474 8.25 5.74994C5.96125 6.96891 4.75 9.2259 4.75 12C4.75 16.004 7.99594 19.25 12 19.25C14.7741 19.25 17.031 18.0387 18.25 15.7499Z"
+            ></path>
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M16 4.75C16 6.95914 14.9591 9 12.75 9C14.9591 9 16 11.0409 16 13.25C16 11.0409 17.0409 9 19.25 9C17.0409 9 16 6.95914 16 4.75Z"
+            ></path>
+          </svg>
+        </span>
+
+        <form class="form-inline my-2 my-lg-0 ml-auto custom-form">
+          <span class="toggle-text left active_1">Day</span>
+          <div class="toggle">
+            <input type="checkbox" id="toggle" class="checkbox" />
+            <label for="toggle" class="label">
+              <div class="ball"></div>
+            </label>
+          </div>
+          <span class="toggle-text right">Week</span>
+
+          <select class="form-control ml-2 custom-select" id="yearFilter">
+            <option value="">Filter by Year</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+          </select>
+
+          <select class="form-control ml-2 custom-select" id="typeFilter">
+            <option value="">Filter by Type</option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+          </select>
+
+          <select class="form-control ml-2 custom-select" id="searchFilter">
+            <option value="">Search by Movie/Cast</option>
+            <option value="movie">Movie/Series</option>
+            <option value="cast">Cast</option>
+          </select>
+
+          <input
+            class="form-control mr-sm-2 custom-input"
+            type="search"
+            placeholder="Search for movies"
+            id="searchInput"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0 custom-button"
+            type="button"
+            id="searchButton"
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+    </header>
+
+    <div class="container mt-4" id="movieDetailsContainer"></div>
+
+    <main role="main">
+      <div class="container mt-4" id="popular">
+        <div class="row" id="movieContainer"></div>
+      </div>
+    </main>
+
+    <div class="movie-details-overlay"></div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index2.js"></script>
+  </body>
+</html>
