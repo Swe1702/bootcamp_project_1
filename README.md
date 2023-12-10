@@ -28,9 +28,10 @@ Get started
 
     To get started with the CinePulse, simply clone the repository to your local machine and open the index.html file in your web browser.
 
-Bootcamp 1st Project Repository
+Bootcamp_project_1 Repository - 
 
-Live Demo Link
+Live Demo Link - https://swe1702.github.io/bootcamp_project_1/
+
 License
 
 MIT
